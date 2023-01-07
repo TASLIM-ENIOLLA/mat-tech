@@ -19,7 +19,7 @@
     <div class = 'col-auto'>
         <CheckBox bind:checked = {formData.agreement} />
     </div>
-    <div class = 'col'>
+    <div class = 'col px-0'>
         <p class = 'm-0 text-capitalize text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
     </div>
     <div class = 'col-auto'>
