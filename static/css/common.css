@@ -1,0 +1,517 @@
+:root{
+    --theme-color: #52658c;
+    --theme-bg: #52658c;
+}
+@font-face{
+    font-family: MontserratRegular;
+    src: url(/fonts/montserrat/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: MontserratMedium;
+    src: url(/fonts/montserrat/Montserrat-Medium.ttf);
+}
+@font-face{
+    font-family: MontserratBold;
+    src: url(/fonts/montserrat/Montserrat-Bold.ttf);
+}
+@font-face{
+    font-family: MontserratLight;
+    src: url(/fonts/montserrat/Montserrat-Light.ttf);
+}
+@font-face{
+    font-family: GDSherpaVf;
+    src: url(/fonts/gd/gd-sherpa-vf.woff2);
+}
+@font-face{
+    font-family: GDSageBold;
+    src: url(/fonts/gd/gd-sage-bold.woff2);
+}
+.gd-sage-bold{
+    font-family: GDSageBold !important;
+}
+.gd-sherpa-vf{
+    font-family: GDSherpaVf !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: rgba(0,0,0,.3);
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: var(--cyan);
+}
+.custom-scroll-bar:hover::-webkit-scrollbar {
+    width: 4px !important;
+    height: 4px !important;
+    background: transparent;
+}
+.custom-scroll-bar:hover::-webkit-scrollbar-thumb{
+    cursor: pointer;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+.custom-scroll-bar::-webkit-scrollbar {
+    width: 4px !important;
+    height: 4px !important;
+    background: transparent;
+}
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: transparent;
+}
+a, span{
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+.text-sentence{
+    display: block;
+}
+.text-sentence::first-letter{
+    text-transform: uppercase;
+}
+.fo-s-1x3rem{
+    font-size: 1.2rem !important;
+}
+.text-sentence::first-letter{
+    text-transform: capitalize;
+}
+body{
+    background-color: #f6f5f3;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: GDSherpaVf;
+    font-size: 13px;
+    text-decoration: none;
+    user-select: none;
+}
+@keyframes side_to_side{
+    from{
+        background-position: top left;
+    }
+    to{
+        background-position: bottom right;
+    }
+}
+.min-h-100{
+    min-height: 100%;
+}
+.object-fit-cover{
+    object-fit: cover;
+}
+.object-fit-contain{
+    object-fit: contain;
+}
+.object-fit-fill{
+    object-fit: fill;
+}
+.object-fit-scale-down{
+    object-fit: scale-down;
+}
+.border-choco{
+    border: 2px solid #c96;
+}
+.text-choco{
+    color: #c96;
+}
+.active-menu{
+    color: var(--theme-color);
+    background: #7fd8b79e;
+}
+.single-line{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+    width: 0px;
+	/*To use this class style, the element containing the text will have this class style and flex-1. Its parent must have flex-h*/
+}
+.underline{
+    text-decoration: underline;
+}
+.bottom-dash{
+    position: relative;
+}
+.bottom-dash::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:  100%;
+    left: 0;
+    width: 70%;
+    height: 5px;
+    background: #cade22;
+}
+.border-5x{
+    border-width: 5px !important;
+}
+.j-c-r{
+    justify-content: right;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.italic{
+    font-style: italic;
+}
+.hover{
+    transition: .3s;
+}
+.hover:hover{
+    box-shadow: 0px 5px 15px lightgray;
+}
+.break-word{
+    word-break: break-word;
+}
+.transit{
+    transition: .3s !important;
+}
+.text-color-inherit{
+    color: inherit;
+}
+.text-r{
+    text-align: right;
+}
+.text-l{
+    text-align: left;
+}
+.text-c{
+    text-align: center;
+}
+.po-rel{
+    position: relative;
+}
+.po-abs{
+    position: absolute;
+}
+.po-fixed{
+    position: fixed;
+}
+.half-bold{
+    font-family: MontserratRegular;
+}
+.bold{
+    font-family: MontserratMedium;
+}
+.overflow-0{
+    overflow: hidden;
+}
+.w-max-75{
+    max-width: 75%;
+}
+.user-select-0{
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+.vh100{
+    height: 100vh;
+}
+.min-vh100{
+    min-height: 100vh;
+}
+.vw100{
+    width: 100vw;
+}
+.bg-clear{
+    background: transparent;
+}
+.overflow-y-auto{
+    overflow-y: auto;
+}
+.pointer-events-0{
+    pointer-events: none;
+}
+.disabled{
+    pointer-events: none;
+    opacity: .5;
+}
+.opacity-5{
+    opacity: .5
+}
+.outline-0{
+    outline: 0 !important;
+}
+.min-width-70px{
+    min-width: 70px;
+}
+.overflow-x-auto{
+    overflow-x: auto;
+}
+.overflow-y-0{
+    overflow-y: hidden;
+}
+.overflow-x-0{
+    overflow-x: hidden;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.j-c-c{
+    justify-content: center;
+}
+.a-i-c{
+    align-items: center;
+}
+.flex-h{
+    display: flex;
+}
+.flex-v{
+    display: flex;
+    flex-direction: column;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-2{
+    flex: 2;
+}
+.flex-3{
+    flex: 3;
+}
+.flex-4{
+    flex: 4;
+}
+.flex-5{
+    flex: 5;
+}
+.flex-6{
+    flex: 6;
+}
+.flex-7{
+    flex: 7;
+}
+.flex-8{
+    flex: 8;
+}
+.flex-8{
+    flex: 8;
+}
+.flex-10{
+    flex: 10;
+}
+.flex-0{
+    flex: 0;
+}
+.resize-0{
+    resize: none;
+}
+.loader{
+    width: 100%;
+    height: 5px;
+    background-color: gainsboro;
+    overflow: hidden;
+    transition: .3s;
+    display: none;
+    transition-delay: .5s;
+}
+.loader > div{
+    content: "";
+    display: block;
+    width: 3%;
+    height: 100%;
+    background-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    transition: .3s;
+    transition-delay: .3s;
+}
+.theme-color{
+    color: var(--theme-color);
+}
+.theme-color-dark{
+    color: var(--theme-color);
+}
+.theme-bg{
+    background: var(--theme-bg);
+}
+.theme-bg-half{
+    background: var(--theme-bg);
+}
+.blur-3{
+    filter: blur(3px);
+}
+.blur-0{
+    filter: none;
+}
+.fo-s-15{
+    font-size: 15px;
+}
+.fo-s-16{
+    font-size: 16px;
+}
+.fo-s-18{
+    font-size: 18px;
+}
+.border-1{
+    border-width: 1px;
+}
+.border-2{
+    border-width: 2px;
+}
+.border-3{
+    border-width: 3px;
+}
+.theme-border{
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--theme-color);
+}
+.fo-s-20{
+    font-size: 20px;
+}
+.fo-s-22{
+    font-size: 22px;
+}
+.pointer-0{
+    pointer-events: none;
+}
+.btop-theme{
+    border-top: thin solid rgb(231, 120, 23);
+}
+.bt-theme{
+    border-top: thin solid var(--theme-color);
+}
+.bb-theme{
+    border-bottom: thin solid var(--theme-color);
+}
+.error-border{
+    border: 1px solid rgb(255, 46, 36);
+}
+.bb{
+    border-bottom: thin solid gainsboro;
+}
+.letter-spacing-1{
+    letter-spacing: 1px;
+}
+.one-line{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.double-line{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.triple-line{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.theme-icon{
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+.w-none{
+    width: 0;
+}
+.h-none{
+    height: 0;
+}
+.top-0{
+    top: 0;
+}
+.left-0{
+    left: 0;
+}
+.bottom-0{
+    bottom: 0;
+}
+.bottom-100pcent{
+    bottom: 100%;
+}
+.right-0{
+    right: 0;
+}
+.right-100pcent{
+    right: 100%;
+}
+.top-100pcent{
+    top: 100%;
+}
+.left-100pcent{
+    left: 100%;
+}
+.d-block{
+    display: block;
+}
+.w-100{
+    width: 100%;
+}
+.flicker{
+    transition: .3s;
+}
+.flicker:active{
+    opacity: .7;
+}
+.fadeOut{
+    animation: fadeOut .3s ease-in-out;
+}
+.po-sticky{
+    position: sticky;
+}
+.visibility-0{
+    visibility: hidden;
+}
+.visibility-visible{
+    visibility: visible;
+}
+.slideInToTop{
+    animation: slideInToTop .2s ease;
+}
+.j-c-space-between{
+    justify-content: space-between;
+}
+.j-c-space-evenly{
+    justify-content: space-evenly;
+}
+.j-c-space-around{
+    justify-content: space-around;
+}
+.max-w-80{
+    max-width: 80%;
+}
+.rounded-5px{
+    border-radius: 5px;
+}
+.rounded-1x{
+    border-radius: 10px;
+}
+.rounded-2x{
+    border-radius: 20px;
+}
+.translate-X--100{
+    transform: translateX(-100%);
+}
+.translate-X-0{
+    transform: translateX(0%);
+}
+.translate-X-100{
+    transform: translateX(100%);
+}
+@keyframes slideInToTop{
+    0%{
+        opacity: .5;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
