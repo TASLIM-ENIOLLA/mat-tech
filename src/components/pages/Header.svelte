@@ -1,4 +1,4 @@
-<section class = 'py-3 position-sticky top-0 left-0 backdrop-effect'>
+<section class = 'py-2 py-lg-3 position-sticky top-0 left-0 backdrop-effect'>
     <div class = 'container'>
         <div class = 'row a-i-c j-c-space-between'>
             <div class = 'col-auto'>
