@@ -1,4 +1,4 @@
-<section class = 'bg-purple py-3'>
+<section class = 'd-none d-lg-block bg-purple py-3'>
 	<div class = 'container-fluid'>
 		<div class = 'row j-c-c a-i-c'>
 			<div class = 'col-auto text-center text-sentence bold'>

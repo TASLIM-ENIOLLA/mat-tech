@@ -15,7 +15,7 @@
                 <button class = 'free-trial-btn bold btn mx-3 text-capitalize py-2 px-4 rounded-1x bg-purple text-white'>start free trial</button>
             </div>
             <div class = 'col-auto d-lg-none'>
-                <button class = 'bg-clear border-0'>
+                <button class = 'bg-clear btn border-0'>
                     <span class = 'bi-border-width text-purple fo-s-22'></span>
                 </button>
             </div>

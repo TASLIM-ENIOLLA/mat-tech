@@ -33,7 +33,7 @@
 		background-size: cover;
 	}
 	.py-7vw{
-		padding: 7vw 0;
+		padding: 15vw 0;
 		backdrop-filter: blur(5px);
 	}
 </style>

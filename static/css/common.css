@@ -86,7 +86,7 @@ a, span{
     text-transform: capitalize;
 }
 body{
-    background-color: #f6f5f3;
+    background-color: var(--light);
 }
 *{
     box-sizing: border-box;

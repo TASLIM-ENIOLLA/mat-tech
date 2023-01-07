@@ -11,7 +11,7 @@
             </div>
             <div class = 'col-lg-auto col-md-12'>
                 <div class = 'row a-i-c'>
-                    <div class = 'col-auto'>
+                    <div class = 'col-auto my-2'>
                         <span>Follow our socials</span>
                     </div>
                     <div class = 'col-auto'>
