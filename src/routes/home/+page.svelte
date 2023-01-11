@@ -35,13 +35,13 @@
 </header>
 <section class = 'py-5'>
 	<div class = 'container'>
-		<div class = 'row j-c-space-between a-i-c py-5'>
+		<div class = 'row j-c-space-between a-i-c'>
 			<div class = 'col-md-5 mb-5'>
 				<img src = '/images/sofa2.png' height = '250' style = 'object-fit: contain;' class = 'd-block w-100' />
 			</div>
 			<div class = 'col-md-7 mb-5'>
 				<h1 class = 'gd-sage-bold text-capitalize mb-3'>
-					we believe that a team make any project better
+					we believe that a team makes any project better
 				</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -58,7 +58,7 @@
 </section>
 <section class = 'py-5'>
 	<div class = 'container'>
-		<div class = 'row j-c-space-between a-i-c py-5 flex-row-reverse'>
+		<div class = 'row j-c-space-between a-i-c flex-row-reverse'>
 			<div class = 'col-md-5 mb-5'>
 				<img src = '/images/sofa2.png' height = '250' style = 'object-fit: contain;' class = 'd-block w-100' />
 			</div>
@@ -128,7 +128,7 @@
 	</div>
 </section>
 <footer class = 'py-5'>
-	<div class = 'py-5 container text-black'>
+	<div class = 'container text-black'>
 		<div class = 'row j-c-c mb-5 pb-5'>
 			<div class = 'col-lg-6 text-center'>
 				<h2 class = 'gd-sage-bold text-capitalize'>
