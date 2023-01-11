@@ -37,7 +37,7 @@
 	<div class = 'container'>
 		<div class = 'row j-c-space-between a-i-c'>
 			<div class = 'col-md-5 mb-5'>
-				<img src = '/images/sofa2.png' height = '250' style = 'object-fit: contain;' class = 'd-block w-100' />
+				<img src = '/images/sofa2.png' class = 'd-block w-100' />
 			</div>
 			<div class = 'col-md-7 mb-5'>
 				<h2 class = 'gd-sage-bold text-capitalize mb-3'>
@@ -60,7 +60,7 @@
 	<div class = 'container'>
 		<div class = 'row j-c-space-between a-i-c flex-row-reverse'>
 			<div class = 'col-md-5 mb-5'>
-				<img src = '/images/sofa2.png' height = '250' style = 'object-fit: contain;' class = 'd-block w-100' />
+				<img src = '/images/sofa2.png' class = 'd-block w-100' />
 			</div>
 			<div class = 'col-md-7 mb-5'>
 				<h2 class = 'gd-sage-bold text-capitalize mb-3'>
