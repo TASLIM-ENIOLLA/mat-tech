@@ -11,7 +11,7 @@
 		<div class = 'row a-i-c j-c-space-between'>
 			<div class = 'col-auto'>
 				<a href = ''>
-					<img src = '/favicon.png' width = '45' />
+					<img src = '/favicon.png' width = '40' />
 				</a>
 			</div>
 			<div class = 'd-none d-lg-block col-auto gd-sage-bold'>
