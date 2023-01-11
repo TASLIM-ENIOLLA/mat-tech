@@ -40,9 +40,9 @@
 				<img src = '/images/sofa2.png' height = '250' style = 'object-fit: contain;' class = 'd-block w-100' />
 			</div>
 			<div class = 'col-md-7 mb-5'>
-				<h1 class = 'gd-sage-bold text-capitalize mb-3'>
+				<h2 class = 'gd-sage-bold text-capitalize mb-3'>
 					we believe that a team makes any project better
-				</h1>
+				</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.
@@ -63,24 +63,24 @@
 				<img src = '/images/sofa2.png' height = '250' style = 'object-fit: contain;' class = 'd-block w-100' />
 			</div>
 			<div class = 'col-md-7 mb-5'>
-				<h1 class = 'gd-sage-bold text-capitalize mb-3'>
+				<h2 class = 'gd-sage-bold text-capitalize mb-3'>
 					simple way to make stylish living room
-				</h1>
+				</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.
 				</p>
 				<div class = 'row my-3'>
 					<div class = 'col-lg-3 col'>
-						<h1 class = 'gd-sage-bold mb-1'>15</h1>
+						<h2 class = 'gd-sage-bold mb-1'>15</h2>
 						<p class = 'text-sentence'>lorem ipsum dolor sit amet</p>
 					</div>
 					<div class = 'col-lg-3 col'>
-						<h1 class = 'gd-sage-bold mb-1'>350</h1>
+						<h2 class = 'gd-sage-bold mb-1'>350</h2>
 						<p class = 'text-sentence'>lorem ipsum dolor sit amet</p>
 					</div>
 					<div class = 'col-lg-3 col'>
-						<h1 class = 'gd-sage-bold mb-1'>25</h1>
+						<h2 class = 'gd-sage-bold mb-1'>25</h2>
 						<p class = 'text-sentence'>lorem ipsum dolor sit amet</p>
 					</div>
 				</div>
