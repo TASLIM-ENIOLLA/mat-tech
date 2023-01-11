@@ -47,3 +47,35 @@
 .text-dark{color: var(--dark);}
 .bg-creame{background: var(--creame);}
 .text-creame{color: var(--creame);}
+.bg-black{background: var(--black);}
+.text-black{color: var(--black);}
+
+@keyframes swell{
+	from{
+		background-size: 120%;
+	}
+	to{
+		background-size: 80%;
+	}
+}
+
+body{
+	animation: swell 30s linear infinite alternate;
+	background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)),
+					  url(../images/bg/1.png);
+	background-position: top;
+	background-size: cover;
+	background-attachment: fixed;
+	backdrop-filter: grayscale(1);
+}
+button{
+	transition-delay: 0;
+	transition: all .2s ease-in-out;
+	opacity: 1;
+}
+button:hover{
+	opacity: .8;
+}
+button:active{
+	opacity: .7;
+}

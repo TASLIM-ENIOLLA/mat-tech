@@ -85,17 +85,13 @@ a, span{
 .text-sentence::first-letter{
     text-transform: capitalize;
 }
-body{
-    background-color: var(--light);
-}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: GDSherpaVf;
-    font-size: 13px;
+    font-family: MontserratMedium;
+    font-size: 13.3px;
     text-decoration: none;
-    user-select: none;
 }
 @keyframes side_to_side{
     from{

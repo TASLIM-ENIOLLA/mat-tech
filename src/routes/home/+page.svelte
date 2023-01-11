@@ -1,0 +1,197 @@
+<script>
+	import UserHead from '../../components/utils/others/UserProfile.svelte'
+	import TestimonialCard from '../../components/utils/others/TestimonialCard.svelte'
+	import MailSubscription from '../../components/utils/footer/MailSubscription.svelte'
+</script>
+
+<header
+	class = 'py-3 bg-white shadow position-sticky top-0 left-0'
+	style = 'z-index: 10;'>
+	<div class = 'container'>
+		<div class = 'row a-i-c j-c-space-between'>
+			<div class = 'col-auto'>
+				<a href = ''>
+					<img src = '/favicon.png' width = '45' />
+				</a>
+			</div>
+			<div class = 'd-none d-lg-block col-auto gd-sage-bold'>
+				<a href = '' class = 'mx-4 d-inline-block text-capitalize'>about</a>
+				<a href = '' class = 'mx-4 d-inline-block text-capitalize'>services</a>
+				<a href = '' class = 'mx-4 d-inline-block text-capitalize'>project</a>
+				<a href = '' class = 'mx-4 d-inline-block text-capitalize'>contact</a>
+			</div>
+			<div class = 'd-none d-lg-block col-auto'>
+				<button class = 'px-4 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
+					try for free
+				</button>
+			</div>
+			<div class = 'd-lg-none col-auto'>
+				<button class = 'px-3 py-2 text-capitalize bg-black outline-0 border-0 text-white'>
+					<span class = 'bi-border-width fo-s-20'></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</header>
+<section class = 'py-5'>
+	<div class = 'container'>
+		<div class = 'row j-c-space-between a-i-c py-5'>
+			<div class = 'col-md-5 mb-5'>
+				<img src = '/images/sofa2.png' height = '250' style = 'object-fit: contain;' class = 'd-block w-100' />
+			</div>
+			<div class = 'col-md-7 mb-5'>
+				<h1 class = 'gd-sage-bold text-capitalize mb-3'>
+					we believe that a team make any project better
+				</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<div>
+					<button class = 'px-5 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
+						try for free
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class = 'py-5'>
+	<div class = 'container'>
+		<div class = 'row j-c-space-between a-i-c py-5 flex-row-reverse'>
+			<div class = 'col-md-5 mb-5'>
+				<img src = '/images/sofa2.png' height = '250' style = 'object-fit: contain;' class = 'd-block w-100' />
+			</div>
+			<div class = 'col-md-7 mb-5'>
+				<h1 class = 'gd-sage-bold text-capitalize mb-3'>
+					simple way to make stylish living room
+				</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<div class = 'row my-3'>
+					<div class = 'col-lg-3 col'>
+						<h1 class = 'gd-sage-bold mb-1'>15</h1>
+						<p class = 'text-sentence'>lorem ipsum dolor sit amet</p>
+					</div>
+					<div class = 'col-lg-3 col'>
+						<h1 class = 'gd-sage-bold mb-1'>350</h1>
+						<p class = 'text-sentence'>lorem ipsum dolor sit amet</p>
+					</div>
+					<div class = 'col-lg-3 col'>
+						<h1 class = 'gd-sage-bold mb-1'>25</h1>
+						<p class = 'text-sentence'>lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+				<div>
+					<button class = 'px-5 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
+						try for free
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class = 'py-5'>
+	<div class = 'py-4 container text-black'>
+		<div class = 'row j-c-c'>
+			<div class = 'col-lg-6 text-center'>
+				<h2 class = 'gd-sage-bold text-capitalize'>
+					words from our customers
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class = 'container-fluid bg-black pt-5'>
+		<div class = 'row py-5'>
+			<div class = 'col-12'>
+				<div class = 'container'>
+					<div class = 'row'>
+						<div class = 'col-md-6 col-lg-4 mb-5'>
+							<TestimonialCard />
+						</div>
+						<div class = 'col-md-6 col-lg-4 mb-5'>
+							<TestimonialCard />
+						</div>
+						<div class = 'col-md-6 col-lg-4 mb-5'>
+							<TestimonialCard />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class = 'py-5'>
+	<div class = 'py-5 container text-black'>
+		<div class = 'row j-c-c mb-5 pb-5'>
+			<div class = 'col-lg-6 text-center'>
+				<h2 class = 'gd-sage-bold text-capitalize'>
+					subscribe to our newsletter
+				</h2>
+				<p class = 'text-dark'>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<div class = 'pt-3'>
+					<MailSubscription />
+				</div>
+			</div>
+		</div>
+		<div class = 'row'>
+			<div class = 'col-lg-3 mb-5'>
+				<h5>
+					<a href = ''><img src = '/favicon.png' width = '45' /></a>
+				</h5>
+				<div>
+					<address class = 'text-capitalize'>
+						2305 NW Kearney St, Portland, Oregon.
+					</address>
+				</div>
+				<div class = 'text-capitalize'>
+					<p>&copy; {new Date().getFullYear()} MAT Technical Services, all rights reserved.</p>
+				</div>
+			</div>
+			<div class = 'col-12 col-lg-3 col-sm-6 mb-5'>
+				<h5 class = 'gd-sage-bold text-capitalize mb-4'>about us</h5>
+				<div>
+					<p><a href = '' class = 'text-capitalize'>Contact information</a></p>
+					<p><a href = '' class = 'text-capitalize'>About Us</a></p>
+					<p><a href = '' class = 'text-capitalize'>Return Policy</a></p>
+					<p><a href = '' class = 'text-capitalize'>Contract Policy</a></p>
+					<p><a href = '' class = 'text-capitalize'>Cookie Declaration</a></p>
+					<p><a href = '' class = 'text-capitalize'>Privacy Policy</a></p>
+				</div>
+			</div>
+			<div class = 'col-12 col-lg-3 col-sm-6 mb-5'>
+				<h5 class = 'gd-sage-bold text-capitalize mb-4'>support</h5>
+				<div>
+					<p><a href = '' class = 'text-capitalize'>FAQs</a></p>
+					<p><a href = '' class = 'text-capitalize'>Shipping &amp; purchase</a></p>
+					<p><a href = '' class = 'text-capitalize'>Care guide</a></p>
+					<p><a href = '' class = 'text-capitalize'>Warranty</a></p>
+				</div>
+			</div>
+			<div class = 'col-12 col-lg-3 col-sm-6 mb-5'>
+				<h5 class = 'gd-sage-bold text-capitalize mb-4'>reach us</h5>
+				<div>
+					<p>
+						<a href = 'mailto://support@mattech.com'class = 'text-lowercase'>
+							support@mattech.com
+						</a>
+					</p>
+					<p>
+						<a href = 'tel://(503) 224-5586' class = 'text-capitalize'>
+							(503) 224-5586
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
