@@ -261,12 +261,12 @@
 				<h5 class = 'gd-sage-bold text-capitalize mb-4'>reach us</h5>
 				<div>
 					<p>
-						<a href = 'mailto://support@mattech.com'class = 'text-lowercase'>
+						<a href = 'mailto://support@mattech.com'class = 'underline text-lowercase'>
 							support@mattech.com
 						</a>
 					</p>
 					<p>
-						<a href = 'tel://(503) 224-5586' class = 'text-capitalize'>
+						<a href = 'tel://(503) 224-5586' class = 'underline text-capitalize'>
 							(503) 224-5586
 						</a>
 					</p>
