@@ -41,7 +41,7 @@
 				</button>
 			</div>
 			<div class = 'd-lg-none col-auto'>
-				<button class = 'px-3 py-2 text-capitalize bg-black outline-0 border-0 text-white'>
+				<button class = 'px-3 py-2 rounded-lg text-capitalize bg-black outline-0 border-0 text-white'>
 					<span class = 'bi-border-width fo-s-20'></span>
 				</button>
 			</div>
@@ -49,21 +49,28 @@
 	</div>
 </header>
 <section class = 'py-5'>
-	<div class = 'container py-5'>
-		<div class = 'row'>
-			<div class = 'col-lg-6'>
-				<h1 class = 'text-uppercase gd-sage-bold'>sketch luxury interior design</h1>
-				<p class = 'text-sentence'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<div class = 'row'>
-					<div class = 'col-auto'>
-						<button class = 'px-5 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
-							get started
-						</button>
+	<div class = 'container'>
+		<div class = 'row j-c-c'>
+			<div class = 'col-lg-10'>	
+				<div class = 'row a-i-c'>
+					<div class = 'col-lg-7 mb-lg-0 mb-5'>
+						<h1 class = 'text-uppercase gd-sage-bold mb-4'>sketch luxury interior design</h1>
+						<p class = 'text-sentence mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<div class = 'row'>
+							<div class = 'col-auto mb-3'>
+								<button class = 'px-5 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
+									get started
+								</button>
+							</div>
+							<div class = 'col-auto mb-3'>
+								<button class = 'px-5 rounded-lg gd-sage-bold py-3 text-capitalize bg-light outline-0 border-0 text-black'>
+									contact us
+								</button>
+							</div>
+						</div>
 					</div>
-					<div class = 'col-auto'>
-						<button class = 'px-5 rounded-lg gd-sage-bold py-3 text-capitalize bg-light outline-0 border-0 text-black'>
-							contact us
-						</button>
+					<div class = 'col-lg-5 mb-lg-0 mb-5'>
+						<img class = 'd-block w-100 gray-image' src = '/images/workplace.png' />
 					</div>
 				</div>
 			</div>
