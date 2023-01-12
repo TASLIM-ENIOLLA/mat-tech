@@ -2,6 +2,27 @@
 	import UserHead from '../../components/utils/others/UserProfile.svelte'
 	import TestimonialCard from '../../components/utils/others/TestimonialCard.svelte'
 	import MailSubscription from '../../components/utils/footer/MailSubscription.svelte'
+
+	function ExportPDF(){
+		const head = document.head.cloneNode(true)
+		const body = document.body.cloneNode(true)
+		const html = document.createElement('html')
+
+		html.appendChild(head)
+		html.appendChild(body)
+
+		const bytes = new Uint8Array(59);
+
+		for (let i = 0; i < 59; i++) {
+			bytes[i] = 32 + i;
+		}
+
+		const blob = new Blob([JSON.stringify(html.outerHTML)], {type: 'application/pdf'})
+		const url = URL.createObjectURL(blob)
+		const link = document.createElement('a')
+		link.href = url
+		link.click()
+	}
 </script>
 
 <header
@@ -21,7 +42,7 @@
 				<a href = '' class = 'mx-4 d-inline-block text-capitalize'>contact</a>
 			</div>
 			<div class = 'd-none d-lg-block col-auto'>
-				<button class = 'px-4 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
+				<button on:click = {ExportPDF} class = 'px-4 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
 					try for free
 				</button>
 			</div>
@@ -35,66 +56,74 @@
 </header>
 <section class = 'py-5'>
 	<div class = 'container'>
-		<div class = 'row j-c-space-between a-i-c'>
-			<div class = 'col-md-5 mb-5'>
-				<img src = '/images/sofa2.png' class = 'd-block w-100' />
-			</div>
-			<div class = 'col-md-7 mb-5'>
-				<h2 class = 'gd-sage-bold text-capitalize mb-3'>
-					we believe that a team makes any project better
-				</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-				<div>
-					<button class = 'px-5 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
-						try for free
-					</button>
-				</div>
+		<div class = 'row a-i-c j-c-c'>
+			<div class = 'col-lg-10'>
+				<div class = 'row j-c-space-between a-i-c'>
+					<div class = 'col-md-4 mb-5'>
+						<img src = '/images/sofa2.png' class = 'd-block w-100' />
+					</div>
+					<div class = 'col-md-7 mb-5'>
+						<h2 class = 'gd-sage-bold text-capitalize mb-3'>
+							we believe that a team makes any project better
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<div>
+							<button class = 'px-5 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
+								try for free
+							</button>
+						</div>
+					</div>
+				</div>	
 			</div>
 		</div>
 	</div>
 </section>
 <section class = 'py-5'>
 	<div class = 'container'>
-		<div class = 'row j-c-space-between a-i-c flex-row-reverse'>
-			<div class = 'col-md-5 mb-5'>
-				<img src = '/images/sofa2.png' class = 'd-block w-100' />
-			</div>
-			<div class = 'col-md-7 mb-5'>
-				<h2 class = 'gd-sage-bold text-capitalize mb-3'>
-					simple way to make stylish living room
-				</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-				<div class = 'row my-3'>
-					<div class = 'col-lg-3 col'>
-						<h2 class = 'gd-sage-bold mb-1'>15</h2>
-						<p class = 'text-sentence'>lorem ipsum dolor sit amet</p>
+		<div class = 'row j-c-c a-i-c'>
+			<div class = 'col-lg-10'>
+				<div class = 'row j-c-space-between a-i-c flex-row-reverse'>
+					<div class = 'col-md-5 mb-md-0 mb-5'>
+						<img src = '/images/sofa2.png' class = 'd-block w-100' />
 					</div>
-					<div class = 'col-lg-3 col'>
-						<h2 class = 'gd-sage-bold mb-1'>350</h2>
-						<p class = 'text-sentence'>lorem ipsum dolor sit amet</p>
+					<div class = 'col-md-7 mb-md-0 mb-5'>
+						<h2 class = 'gd-sage-bold text-capitalize mb-3'>
+							simple way to make stylish living room
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<div class = 'row my-3'>
+							<div class = 'col-lg-3 col'>
+								<h2 class = 'gd-sage-bold mb-1'>15</h2>
+								<p class = 'text-sentence'>ipsum dolor sit labore et</p>
+							</div>
+							<div class = 'col-lg-3 col'>
+								<h2 class = 'gd-sage-bold mb-1'>350</h2>
+								<p class = 'text-sentence'>ut labore et dolore</p>
+							</div>
+							<div class = 'col-lg-3 col'>
+								<h2 class = 'gd-sage-bold mb-1'>25</h2>
+								<p class = 'text-sentence'>dolore magna aliqua</p>
+							</div>
+						</div>
+						<div>
+							<button class = 'px-5 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
+								try for free
+							</button>
+						</div>
 					</div>
-					<div class = 'col-lg-3 col'>
-						<h2 class = 'gd-sage-bold mb-1'>25</h2>
-						<p class = 'text-sentence'>lorem ipsum dolor sit amet</p>
-					</div>
-				</div>
-				<div>
-					<button class = 'px-5 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
-						try for free
-					</button>
-				</div>
+				</div>	
 			</div>
 		</div>
 	</div>
 </section>
 <section class = 'py-5'>
-	<div class = 'py-4 container text-black'>
+	<div class = 'pb-5 container text-black'>
 		<div class = 'row j-c-c'>
 			<div class = 'col-lg-6 text-center'>
 				<h2 class = 'gd-sage-bold text-capitalize'>
@@ -107,18 +136,18 @@
 			</div>
 		</div>
 	</div>
-	<div class = 'container-fluid bg-black pt-5'>
+	<div class = 'container-fluid bg-black py-4'>
 		<div class = 'row py-5'>
 			<div class = 'col-12'>
 				<div class = 'container'>
 					<div class = 'row'>
-						<div class = 'col-md-6 col-lg-4 mb-5'>
+						<div class = 'col-md-6 col-lg-4 mb-lg-0 mb-5'>
 							<TestimonialCard />
 						</div>
-						<div class = 'col-md-6 col-lg-4 mb-5'>
+						<div class = 'col-md-6 col-lg-4 mb-lg-0 mb-5'>
 							<TestimonialCard />
 						</div>
-						<div class = 'col-md-6 col-lg-4 mb-5'>
+						<div class = 'col-md-6 col-lg-4 mb-lg-0 mb-5'>
 							<TestimonialCard />
 						</div>
 					</div>
@@ -144,7 +173,7 @@
 			</div>
 		</div>
 		<div class = 'row'>
-			<div class = 'col-lg-3 mb-5'>
+			<div class = 'col-lg-3 mb-lg-0 mb-5'>
 				<h5>
 					<a href = ''><img src = '/favicon.png' width = '45' /></a>
 				</h5>
@@ -157,7 +186,7 @@
 					<p>&copy; {new Date().getFullYear()} MAT Technical Services, all rights reserved.</p>
 				</div>
 			</div>
-			<div class = 'col-12 col-lg-3 col-sm-6 mb-5'>
+			<div class = 'col-12 col-lg-3 col-sm-6 mb-lg-0 mb-5'>
 				<h5 class = 'gd-sage-bold text-capitalize mb-4'>about us</h5>
 				<div>
 					<p><a href = '' class = 'text-capitalize'>Contact information</a></p>
@@ -168,7 +197,7 @@
 					<p><a href = '' class = 'text-capitalize'>Privacy Policy</a></p>
 				</div>
 			</div>
-			<div class = 'col-12 col-lg-3 col-sm-6 mb-5'>
+			<div class = 'col-12 col-lg-3 col-sm-6 mb-lg-0 mb-5'>
 				<h5 class = 'gd-sage-bold text-capitalize mb-4'>support</h5>
 				<div>
 					<p><a href = '' class = 'text-capitalize'>FAQs</a></p>
@@ -177,7 +206,7 @@
 					<p><a href = '' class = 'text-capitalize'>Warranty</a></p>
 				</div>
 			</div>
-			<div class = 'col-12 col-lg-3 col-sm-6 mb-5'>
+			<div class = 'col-12 col-lg-3 col-sm-6 mb-lg-0 mb-5'>
 				<h5 class = 'gd-sage-bold text-capitalize mb-4'>reach us</h5>
 				<div>
 					<p>
