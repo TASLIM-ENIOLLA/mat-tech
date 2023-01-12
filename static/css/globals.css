@@ -67,6 +67,7 @@ body{
 	background-size: cover;
 	background-attachment: fixed;
 	backdrop-filter: grayscale(1);
+	background-repeat: no-repeat;
 }
 button{
 	transition-delay: 0;

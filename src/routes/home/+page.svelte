@@ -91,14 +91,14 @@
 			</div>
 		</div>
 		<div class = 'container'>
-			<div class = 'row j-c-c'>
-				<div class = 'col-md-4 col-lg-3 mb-lg-0 mb-5'>
+			<div class = 'row justify-content-lg-center'>
+				<div class = 'col-sm-6 col-lg-3 mb-lg-0 mb-5'>
 					<ServiceCard />
 				</div>
-				<div class = 'col-md-4 col-lg-3 mb-lg-0 mb-5'>
+				<div class = 'col-sm-6 col-lg-3 mb-lg-0 mb-5'>
 					<ServiceCard />
 				</div>
-				<div class = 'col-md-4 col-lg-3 mb-lg-0 mb-5'>
+				<div class = 'col-sm-6 col-lg-3 mb-lg-0 mb-5'>
 					<ServiceCard />
 				</div>
 			</div>
