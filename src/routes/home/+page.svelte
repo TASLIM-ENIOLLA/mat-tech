@@ -1,28 +1,22 @@
 <script>
+	import {onMount} from 'svelte'
+
 	import UserHead from '../../components/utils/others/UserProfile.svelte'
+	import ServiceCard from '../../components/utils/services/ServiceCard.svelte'
 	import TestimonialCard from '../../components/utils/others/TestimonialCard.svelte'
 	import MailSubscription from '../../components/utils/footer/MailSubscription.svelte'
 
-	function ExportPDF(){
-		const head = document.head.cloneNode(true)
-		const body = document.body.cloneNode(true)
-		const html = document.createElement('html')
-
-		html.appendChild(head)
-		html.appendChild(body)
-
-		const bytes = new Uint8Array(59);
-
-		for (let i = 0; i < 59; i++) {
-			bytes[i] = 32 + i;
+	onMount(() => {
+		window.onscroll = () => {
+			const element = document.querySelector("#main-container")
+			const observer = new IntersectionObserver((entries) => {
+				if(entries[0].isIntersecting === true) console.log('Element now in view')
+				else console.log('Element now out of view')
+			}, {threshold: [0]});
+			
+			observer.observe(element)
 		}
-
-		const blob = new Blob([JSON.stringify(html.outerHTML)], {type: 'application/pdf'})
-		const url = URL.createObjectURL(blob)
-		const link = document.createElement('a')
-		link.href = url
-		link.click()
-	}
+	})
 </script>
 
 <header
@@ -42,7 +36,7 @@
 				<a href = '' class = 'mx-4 d-inline-block text-capitalize'>contact</a>
 			</div>
 			<div class = 'd-none d-lg-block col-auto'>
-				<button on:click = {ExportPDF} class = 'px-4 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
+				<button class = 'px-4 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
 					try for free
 				</button>
 			</div>
@@ -54,13 +48,41 @@
 		</div>
 	</div>
 </header>
-<section class = 'py-5'>
+<section id = 'main-container' class = 'py-5'>
+	<div class = 'container'>
+		<div class = 'row j-c-c py-5'>
+			<div class = 'col-lg-6 text-center'>
+				<h2 class = 'gd-sage-bold text-capitalize'>
+					what we provide
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</div>
+		</div>
+		<div class = 'container'>
+			<div class = 'row j-c-c'>
+				<div class = 'col-md-4 col-lg-3 mb-lg-0 mb-5'>
+					<ServiceCard />
+				</div>
+				<div class = 'col-md-4 col-lg-3 mb-lg-0 mb-5'>
+					<ServiceCard />
+				</div>
+				<div class = 'col-md-4 col-lg-3 mb-lg-0 mb-5'>
+					<ServiceCard />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id = 'main-container' class = 'py-5'>
 	<div class = 'container'>
 		<div class = 'row a-i-c j-c-c'>
 			<div class = 'col-lg-10'>
 				<div class = 'row j-c-space-between a-i-c'>
 					<div class = 'col-md-4 mb-5'>
-						<img src = '/images/sofa2.png' class = 'd-block w-100' />
+						<img src = '/images/sofa2.png' class = 'gray-image d-block w-100' />
 					</div>
 					<div class = 'col-md-7 mb-5'>
 						<h2 class = 'gd-sage-bold text-capitalize mb-3'>
@@ -87,7 +109,7 @@
 			<div class = 'col-lg-10'>
 				<div class = 'row j-c-space-between a-i-c flex-row-reverse'>
 					<div class = 'col-md-5 mb-md-0 mb-5'>
-						<img src = '/images/sofa2.png' class = 'd-block w-100' />
+						<img src = '/images/sofa2.png' class = 'gray-image d-block w-100' />
 					</div>
 					<div class = 'col-md-7 mb-md-0 mb-5'>
 						<h2 class = 'gd-sage-bold text-capitalize mb-3'>
@@ -224,3 +246,9 @@
 		</div>
 	</div>
 </footer>
+
+<style type="text/css">
+	.gray-image{
+		filter: grayscale(80%);
+	}
+</style>

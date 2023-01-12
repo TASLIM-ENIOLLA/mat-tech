@@ -1,31 +1,20 @@
-<div class = 'service-card bg-white rounded-2x px-4 py-5'>
-	<h3 class = 'gd-sage-bold theme-color text-sentence mb-3'>ice</h3>
-	<p class = 'text-capitalize bold m-0'>ice mobile 10GB</p>
-	<div class = 'text-sentence'>up to 100Mbit/s</div>
-	<div class = 'mt-3 mb-5 d-flex a-i-c'>
-		<h4 class = 'gd-sage-bold theme-color'>$299&nbsp;</h4>
-		<span>/ month</span>
+<div class = 'container-fluid bg-white shadow py-5'>
+	<div class = 'mb-4'>
+		<img width = '40' class = 'gray-image' src = '/images/diamond.png' />
 	</div>
-	<button class = 'd-block w-100 p-3 rounded-2x border-0 bg-purple text-white bold text-capitalize btn'>add subscription</button>
+	<div class = 'mb-4'>
+		<h2 class = 'gd-sage-bold text-capitalize m-0'>luxury facilities</h2>
+	</div>
+	<div class = 'mb-4'>
+		<p class = 'text-muted m-0'>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div>
+		<a href = '/what-we-provide/luxury-facilities' class = 'gd-sage-bold text-capitalize underline'>learn more</a>
+	</div>
 </div>
 
-<style>
-	.service-card{
-		position: relative;
-		top: 0;
-		left: 0;
-	}
-	.service-card::after{
-		z-index: -1000;
-		display: block;
-		width: 100%;
-		height: 100%;
-		border-radius: 20px;
-		content: '';
-		transform: scale(.8);
-		background: var(--creame);
-		position: absolute;
-		top: -15%;
-		left: 0%;
+<style type="text/css">
+	.gray-image{
+		filter: grayscale(80%);
 	}
 </style>
