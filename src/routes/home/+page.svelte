@@ -52,11 +52,14 @@
 	<div class = 'container'>
 		<div class = 'row j-c-c'>
 			<div class = 'col-lg-10'>	
-				<div class = 'row a-i-c'>
-					<div class = 'col-lg-7 mb-lg-0 mb-5'>
+				<div class = 'row text-center text-md-left flex-row-reverse a-i-c'>
+					<div class = 'col-md-5 mb-lg-0 mb-5'>
+						<img class = 'd-block w-100 gray-image' src = '/images/workplace.png' />
+					</div>
+					<div class = 'col-md-7 mb-lg-0 mb-5'>
 						<h1 class = 'text-uppercase gd-sage-bold mb-4'>sketch luxury interior design</h1>
 						<p class = 'text-sentence mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<div class = 'row'>
+						<div class = 'row justify-content-center justify-content-md-start'>
 							<div class = 'col-auto mb-3'>
 								<button class = 'px-5 rounded-lg gd-sage-bold py-3 text-capitalize bg-black outline-0 border-0 text-white'>
 									get started
@@ -69,9 +72,6 @@
 							</div>
 						</div>
 					</div>
-					<div class = 'col-lg-5 mb-lg-0 mb-5'>
-						<img class = 'd-block w-100 gray-image' src = '/images/workplace.png' />
-					</div>
 				</div>
 			</div>
 		</div>
@@ -79,7 +79,7 @@
 </section>
 <section id = 'main-container' class = 'py-5'>
 	<div class = 'container'>
-		<div class = 'row j-c-c py-5'>
+		<div class = 'row j-c-c pb-5'>
 			<div class = 'col-lg-6 text-center'>
 				<h2 class = 'gd-sage-bold text-capitalize'>
 					what we provide
