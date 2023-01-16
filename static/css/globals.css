@@ -60,14 +60,14 @@
 }
 
 body{
+	background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	backdrop-filter: grayscale(1);
 	animation: swell 30s linear infinite alternate;
 	background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)),
 					  url(../images/bg/1.png);
-	background-position: top;
-	background-size: cover;
-	background-attachment: fixed;
-	backdrop-filter: grayscale(1);
-	background-repeat: no-repeat;
 }
 button{
 	transition-delay: 0;
@@ -79,4 +79,7 @@ button:hover{
 }
 button:active{
 	opacity: .7;
+}
+.gray-image{
+	filter: grayscale(80%);
 }

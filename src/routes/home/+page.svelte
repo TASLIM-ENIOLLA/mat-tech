@@ -49,7 +49,7 @@
 	</div>
 </header>
 <section class = 'py-5'>
-	<div class = 'container'>
+	<div class = 'container py-5'>
 		<div class = 'row j-c-c'>
 			<div class = 'col-lg-10'>	
 				<div class = 'row text-center text-md-left flex-row-reverse a-i-c'>
@@ -78,8 +78,8 @@
 	</div>
 </section>
 <section id = 'main-container' class = 'py-5'>
-	<div class = 'container'>
-		<div class = 'row j-c-c pb-5'>
+	<div class = 'container py-5'>
+		<div class = 'row j-c-c'>
 			<div class = 'col-lg-6 text-center'>
 				<h2 class = 'gd-sage-bold text-capitalize'>
 					what we provide
@@ -106,8 +106,8 @@
 	</div>
 </section>
 <section id = 'main-container' class = 'py-5'>
-	<div class = 'container'>
-		<div class = 'row a-i-c j-c-c'>
+	<div class = 'container py-5'>
+		<div class = 'row a-i-c j-c-c py-5'>
 			<div class = 'col-lg-10'>
 				<div class = 'row j-c-space-between a-i-c'>
 					<div class = 'col-md-4 mb-5'>
@@ -133,8 +133,8 @@
 	</div>
 </section>
 <section class = 'py-5'>
-	<div class = 'container'>
-		<div class = 'row j-c-c a-i-c'>
+	<div class = 'container py-5'>
+		<div class = 'row j-c-c a-i-c py-5'>
 			<div class = 'col-lg-10'>
 				<div class = 'row j-c-space-between a-i-c flex-row-reverse'>
 					<div class = 'col-md-5 mb-md-0 mb-5'>
@@ -208,7 +208,7 @@
 	</div>
 </section>
 <footer class = 'py-5'>
-	<div class = 'container text-black'>
+	<div class = 'container py-5 text-black'>
 		<div class = 'row j-c-c mb-5 pb-5'>
 			<div class = 'col-lg-6 text-center'>
 				<h2 class = 'gd-sage-bold text-capitalize'>
@@ -275,9 +275,3 @@
 		</div>
 	</div>
 </footer>
-
-<style type="text/css">
-	.gray-image{
-		filter: grayscale(80%);
-	}
-</style>
